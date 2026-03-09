@@ -47,14 +47,35 @@ We relate our project to the **DCC Curation Lifecycle Model**, documenting the t
 * **Cleaning**: We will apply semantic cleaning to normalize state identifiers and handle non-numeric suppression codes.
 
 ## Timeline
-| Milestone | Task | Lead | Due Date |
-| :--- | :--- | :--- | :--- |
-| **Milestone 2** | Project Plan and GitHub Release (`project-plan` tag) | Team | March 10 |
-| **Acquisition** | Scripting data intake and integrity verification | [Name] | March 20 |
-| **Milestone 3** | Submit Interim Status Report (~1500 words) | Team | March 31 |
-| **Integration** | Merging Census and IDEA datasets | Team | April 10 |
-| **Automation** | Finalizing the end-to-end Snakemake workflow | [Name] | April 20 |
-| **Milestone 4** | Final Project Submission | Team | May 03 |
+Task 1: Project Plan and GitHub Setup
+Description: We will write the milestone 2 document and create our code repository. We will set up folders for raw data, processed data, and metadata. We will submit the project plan link.
+Deadline: March 10, 2026
+People: Beichen Hu and Yizhou Fang
+
+Task 2: Data Acquisition
+Description: We will download the 3 primary datasets. These include the census household income data, the school system finances data, and the special education child count metadata. We will write scripts to load these files safely into our workspace.
+Deadline: March 20, 2026
+People: Beichen Hu
+
+Task 3: Data Cleaning and Standardization
+Description: The census data is currently in a wide shape. We need to change it to a long shape. We will also fix the state names in all 3 datasets so they match exactly. We will locate and handle the missing data for the states in the finance table.
+Deadline: March 27, 2026
+People: Yizhou Fang
+
+Task 4: Data Integration and Status Report
+Description: We will join the 3 datasets into 1 large table. We will use the state name and the reporting year as the main keys to link them. After merging, we will write a status report of about 1500 words for milestone 3 to explain our progress.
+Deadline: March 31, 2026
+People: Beichen Hu and Yizhou Fang
+
+Task 5: Data Analysis and Pipeline Automation
+Description: We will set up a tool called Snakemake to make our whole process run automatically from start to finish. Then, we will calculate the math to see the relationship between household income and special education spending per pupil. We will make graphs to show the results.
+Deadline: April 20, 2026
+People: Yizhou Fang
+
+Task 6: Final Report and Code Review
+Description: We will write the final project paper for milestone 4. We will review our code to make sure it is clean and easy to read. We will add notes about data privacy and data ethics. We will turn in the final project.
+Deadline: May 3, 2026
+People: Beichen Hu and Yizhou Fang
 
 ## Constraints and Gaps
 * **Missing Data (ELSEC 2024)**: We identified that the ELSEC 2024 summary tables contain missing data for certain states. We will address this by:

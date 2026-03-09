@@ -4,8 +4,8 @@
 This project investigates the equity of resource allocation for special education, specifically focusing on students with hearing impairments and other disabilities under the Individuals with Disabilities Education Act (IDEA). By integrating state-level disability statistics with federal funding and socioeconomic data, we aim to identify whether funding distribution aligns with the actual needs of special education communities. Our approach involves a comprehensive data curation pipeline, from automated acquisition to relational integration, providing a transparent look at how socioeconomic factors influence educational support for vulnerable groups.
 
 ## Team
-* **Beichen Hu**: **Role:** Responsible for
-* **Yizhou Fang**: **Role:** Responsible for 
+* **Beichen Hu**: **Role:** Responsible for Overview, Research Questions and Datasets
+* **Yizhou Fang**: **Role:** Responsible for Project Subject, Timeline and Constraints and Gaps
 
 ## Research Questions
 1. **Fiscal Correlation**: To what extent does a state’s Median Household Income (Census S1901) correlate with the per-pupil federal funding allocated for special education (Census ELSEC Table 1)?
@@ -14,11 +14,14 @@ This project investigates the equity of resource allocation for special educatio
 ## Datasets
 We will use three distinct, primary datasets that are entirely independent of Kaggle, ensuring clear provenance and providing real-world data wrangling opportunities:
 
-1. **American Community Survey (ACS) 1-Year Estimates (2024):** - *Source:* U.S. Census Bureau.
+1. **American Community Survey (ACS) 1-Year Estimates (2024):**
+   - *Source:* U.S. Census Bureau.
    - *Description:* Contains household economic characteristics and income estimates.
-2. **Public Elementary-Secondary School System Finances (ELSEC 2024):** - *Source:* Annual Survey of School System Finances (Census/NCES).
+2. **Public Elementary-Secondary School System Finances (ELSEC 2024):**
+   - *Source:* Annual Survey of School System Finances (Census/NCES).
    - *Description:* Contains state-level revenue, expenditures, and per-pupil spending metrics.
-3. **IDEA Section 618 Part B Child Count Metadata (2024-25):** - *Source:* U.S. Department of Education (EDPass).
+3. **IDEA Section 618 Part B Child Count Metadata (2024-25):**
+   - *Source:* U.S. Department of Education (EDPass).
    - *Description:* Contains state-level administrative policies indicating which disability categories (e.g., Hearing Impairment, Autism) and environments are utilized.
    - *Status:* We have acquired the official 2024-25 metadata schemas (Files 5002/5003).
 

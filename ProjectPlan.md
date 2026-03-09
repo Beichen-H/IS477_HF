@@ -78,8 +78,12 @@ Deadline: May 3, 2026
 People: Beichen Hu and Yizhou Fang
 
 ## Constraints and Gaps
-* **Missing Data (ELSEC 2024)**: We identified that the ELSEC 2024 summary tables contain missing data for certain states. We will address this by:
-    1. Cross-referencing missing states with the ACS S1901 table to ensure demographic coverage.
-    2. Using the Census Bureau's master API to retrieve specific state data that might be absent from the Excel summary tables.
-    3. Documenting any states that must be excluded from final correlation analysis due to insufficient fiscal reporting.
-* **Gaps**: Further research into Workflow Automation is required to ensure a robust, reproducible pipeline.
+1. Data Completeness and Spatial Coverage: The school finance data for 2024 only includes 37 states, which limits our spatial coverage. We will try to find the missing states using the census application programming interface.
+2. Temporal Alignment: We are combining financial data from 2024, census estimates from 2024, and special education data from the 2024 to 2025 school year. The slight time difference between these periods could affect our results.
+3. Technical Difficulties: The census dataset is very wide with complex column names. Changing this into a long shape so it matches the other files will take a lot of work.
+4. Ethical Restrictions: The special education data hides small numbers to protect student privacy. This creates missing data that we cannot legally fill in, which might change our math results.
+
+* **Gaps**:
+1. Data Integration: Anticipating the week 7 course topics, we need to learn more about global as view and local as view methods to define how our datasets will merge.
+2. Missing Data Handling: Anticipating the week 9 and 10 topics, we do not know how to handle the hidden privacy numbers in the special education data without breaking our statistics.
+3. Workflow Automation: Anticipating week 12, we need to research how to build a reproducible pipeline using Snakemake to connect all our steps automatically.

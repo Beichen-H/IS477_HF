@@ -12,17 +12,16 @@ This project investigates the equity of resource allocation for special educatio
 2. **Disparity Identification**: Which U.S. states demonstrate the most significant gap between the prevalence of students with hearing impairments and the growth of state-level educational appropriations in the 2024-25 cycle?
 
 ## Datasets
-Our project requires at least two distinct data sources from trustworthy sources:
+We will use three distinct, primary datasets that are entirely independent of Kaggle, ensuring clear provenance and providing real-world data wrangling opportunities:
 
-### Dataset 1: IDEA Section 618 Child Count (2024-25)
-* **Source**: U.S. Department of Education, Office of Special Education Programs (OSEP).
-* **Description**: Official state-level counts of students with disabilities, specifically focusing on hearing impairments.
-* **Status**: We have acquired the official 2024-25 metadata schemas (Files 5002/5003).
+1. **American Community Survey (ACS) 1-Year Estimates (2024):** - *Source:* U.S. Census Bureau.
+   - *Description:* Contains household economic characteristics and income estimates.
+2. **Public Elementary-Secondary School System Finances (ELSEC 2024):** - *Source:* Annual Survey of School System Finances (Census/NCES).
+   - *Description:* Contains state-level revenue, expenditures, and per-pupil spending metrics.
+3. **IDEA Section 618 Part B Child Count Metadata (2024-25):** - *Source:* U.S. Department of Education (EDPass).
+   - *Description:* Contains state-level administrative policies indicating which disability categories (e.g., Hearing Impairment, Autism) and environments are utilized.
+   - *Status:* We have acquired the official 2024-25 metadata schemas (Files 5002/5003).
 
-### Dataset 2: Annual Survey of School System Finances (ELSEC 2024)
-* **Source**: U.S. Census Bureau (Education Finance Branch).
-* **Description**: Detailed financial statistics for public school systems, including federal, state, and local revenue sources (Tables 1 & 2).
-* **Metadata**: We have acquired the definitions file to ensure accurate variable mapping and data documentation.
 
 ### Data Integration Strategy
 The datasets will be integrated using a relational model with **"State Name"** and **"Reporting Year"** as primary join keys. We will transform the Census "wide" format into a "tidy" long format to facilitate seamless merging with the IDEA student counts.

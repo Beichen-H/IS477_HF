@@ -10,7 +10,6 @@ Our plan has three main steps:
 
 By following a clear data lifecycle, we make sure our work is easy to check, follows ethical rules, and is well-documented.
 
-
 ## Team
 * **Beichen Hu**: **Role: Lead Data Engineer** Responsible for Overview, Research Questions and Datasets (Plan Part); Responsible for managing the GitHub repository, writing code to download data from APIs, joining the datasets using Python, and creating the final automated workflow. (Project)
 * **Yizhou Fang**: **Role:Lead Data Steward** Responsible for Project Subject, Timeline and Constraints and Gaps (Plan Part). Responsible for checking data quality, making sure the data labels (metadata) are clear, and handling privacy and legal rules. (Project)
@@ -33,9 +32,19 @@ We will use three distinct, primary datasets that are entirely independent of Ka
    - *Description:* Contains state-level administrative policies indicating which disability categories (e.g., Hearing Impairment, Autism) and environments are utilized.
    - *Status:* We have acquired the official 2024-25 metadata schemas (Files 5002/5003).
 
+We selected these three specific datasets because they represent the three pillars of our research question: **Need**, **Resource**, and **Context**. 
+
+* **The "Need" (IDEA Dataset)**: This dataset provides the numerator for our analysis—the actual count of students requiring specialized support. Without this, we cannot normalize the financial data to a "per-pupil" basis.
+* **The "Resource" (ELSEC Dataset)**: This serves as our primary dependent variable. It reveals the actual federal and state dollars flowing into school systems. By combining this with the IDEA count, we can calculate the "Relative Funding Intensity" for each state.
+* **The "Context" (ACS S1901 Dataset)**: This acts as our independent variable or grouping factor. It allows us to categorize states into economic tiers (e.g., High-Income vs. Low-Income states) to see if a state's general wealth dictates the level of support for its special education community.
 
 ### Data Integration Strategy
-The datasets will be integrated using a relational model with **"State Name"** and **"Reporting Year"** as primary join keys. We will transform the Census "wide" format into a "tidy" long format to facilitate seamless merging with the IDEA student counts.
+The datasets will be integrated using a relational model with **"State Name"** and **"Reporting Year"** as primary join keys. We will transform the Census "wide" format into a "tidy" long format to facilitate seamless merging with the IDEA student counts.】
+
+Integration will be achieved through a **One-to-One Relational Join**. 
+1. **Key Standardization**: We will first create a crosswalk table that maps OSEP's state names to the Census Bureau's FIPS codes to prevent "mismatch errors" caused by naming variations (e.g., "Wash. D.C." vs "District of Columbia").
+2. **Merging**: Using Python’s `pandas` library, we will perform a `left join` on the **State identifier** and **Fiscal Year (2024)**. 
+3. **Data Validation**: Post-integration, we will verify the row count (expecting 50 states + DC) to ensure no data was lost during the merge process. This integrated table will allow us to run a linear regression to answer whether `Median_Income` significantly predicts `Special_Ed_Spending_Per_Pupil`.
 
 ## Requirements and Curation Plan
 

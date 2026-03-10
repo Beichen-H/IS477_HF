@@ -26,7 +26,7 @@ We will use three distinct, primary datasets that are entirely independent of Ka
    - *Source:* U.S. Census Bureau. Link: https://data.census.gov/table?q=S1901&g=010XX00US$0400000
    - *Description:* Contains household economic characteristics and income estimates.
 2. **Public Elementary-Secondary School System Finances (ELSEC 2024):**
-   - *Source:* Annual Survey of School System Finances (Census/NCES).
+   - *Source:* Annual Survey of School System Finances (Census/NCES). Link: https://www.census.gov/data/tables/2024/econ/school-finances/secondary-education-finance.html
    - *Description:* Contains state-level revenue, expenditures, and per-pupil spending metrics.
 3. **IDEA Section 618 Part B Child Count Metadata (2024-25):**
    - *Source:* U.S. Department of Education (EDPass). Link:https://data.ed.gov/dataset/docs/idea-section-618-state-part-b-child-count-and-educational-environments

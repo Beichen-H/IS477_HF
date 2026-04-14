@@ -34,7 +34,7 @@ The following table outlines our adjusted timeline, indicating the current statu
 | **Task 1** | Project Plan and GitHub Setup | ✅ Completed | Mar 10, 2026 | Beichen, Yizhou |
 | **Task 2** | Data Acquisition (ACS, ELSEC, IDEA) | ✅ Completed* | Mar 20, 2026 | Beichen |
 | **Task 3** | Data Cleaning and Standardization | ✅ Completed | Mar 27, 2026 | Yizhou |
-| **Task 4** | Data Integration and Status Report | 🔄 In Progress | Mar 31, 2026 | Beichen, Yizhou |
+| **Task 4** | Data Integration and Status Report | 🔄 In Progress | Apr 14, 2026 | Beichen, Yizhou |
 | **Task 5** | Data Analysis and Pipeline Automation | ⏳ Not Started | Apr 20, 2026 | Yizhou |
 | **Task 6** | Final Report and Code Review | ⏳ Not Started | May 3, 2026 | Beichen, Yizhou |
 *(Note: Acquisition of the final IDEA dataset is pending external server restoration).*

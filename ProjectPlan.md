@@ -1,4 +1,4 @@
-# Project Plan: Analyzing Resource Allocation for Special Education across U.S. States
+﻿# Project Plan: Analyzing Resource Allocation for Special Education across U.S. States
 
 ## Overview
 This project investigates the equity of resource allocation for special education, specifically focusing on students with hearing impairments and other disabilities under the Individuals with Disabilities Education Act (IDEA). By integrating state-level disability statistics with federal funding and socioeconomic data, we aim to identify whether funding distribution aligns with the actual needs of special education communities. Our approach involves a comprehensive data curation pipeline, from automated acquisition to relational integration, providing a transparent look at how socioeconomic factors influence educational support for vulnerable groups.

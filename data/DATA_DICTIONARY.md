@@ -20,7 +20,7 @@ This file extends the integrated dataset with K-Means clustering results.
 | :--- | :--- | :--- |
 | All columns from integrated dataset | — | Same as above |
 | `Cluster` | int | K-Means cluster assignment (0, 1, or 2) |
-| `Cluster_Label` | string | Descriptive label: "Tier 1: Higher Income / Higher Spending", "Tier 2: Mid Income / Moderate Spending", or "Tier 3: Lower Income / Lower Spending" |
+| `Cluster_Label` | string | Descriptive label: "Tier 1: Higher Income / Higher Spending", "Tier 2: Mid Income / High Spending Outliers", or "Tier 3: Lower Income / Lower Spending" |
 
 ## Raw Data Files
 

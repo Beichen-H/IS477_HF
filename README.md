@@ -1,5 +1,5 @@
 # Interstate Special Education Resource Allocation Analysis
-**Course: IS477 Data Curation** | **Milestone 4: Full Pipeline & Analysis**
+**Course: IS477  Data Management, Curation, and Reproducibility** | **Milestone 4: Full Pipeline & Analysis**
 
 ## Contributors
 - **Beichen Hu** — Lead Data Engineer
